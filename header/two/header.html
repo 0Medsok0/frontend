@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Header Example</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <button
+        class="btn btn-primary canvas-menu"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasExample"
+        aria-controls="offcanvasExample"
+      >
+        Menu
+      </button>
+
+      <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Main Menu</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Закрыть"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            <p>
+              Добро пожаловать в наше главное меню! Здесь вы найдете множество
+              полезных функций и возможностей, которые помогут вам в вашей
+              повседневной жизни.
+            </p>
+            <p>
+              В верхней части экрана вы увидите выпадающие меню, где можно
+              ознакомиться с разделы, посвященные различным аспектам нашей
+              работы: 'Услуги', 'Цены', 'Контакты' и 'Отзывы'. Не упустите
+              возможность быть в курсе последних новостей и обновлений!
+            </p>
+            <p>Заходите и узнайте больше о нас! Мы всегда рады помочь вам!</p>
+          </div>
+          <div class="dropdown mt-3">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton"
+              data-bs-toggle="dropdown"
+            >
+              Страницы
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li><a class="dropdown-item" href="#">Услуги</a></li>
+              <li><a class="dropdown-item" href="#">Цены</a></li>
+              <li><a class="dropdown-item" href="#">Контакты</a></li>
+              <li><a class="dropdown-item" href="#">Отзывы</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <nav>
+        <ul class="link">
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+          <li><a href="#">Link 4</a></li>
+          <li><a href="#">Link 5</a></li>
+        </ul>
+      </nav>
+
+      <div class="container">
+        <form action="/search" method="get">
+          <input type="text" name="search" placeholder="Search" />
+          <input type="submit" value="Search" />
+        </form>
+      </div>
+
+      <div>
+        <button class="btn btn-primary" id="loginBtn">Войти</button>
+        <button class="btn btn-primary" id="registerBtn">
+          Зарегистрироваться
+        </button>
+      </div>
+    </header>
+    <script src="index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
